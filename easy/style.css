@@ -1,3 +1,4 @@
+@layer base{
 :root {
   --base-size: 1rem;
   --scale: 1.25;
@@ -35,9 +36,10 @@ body {
   line-height: 1.75;
   background-color: var(--teal);
   color: var(--white);
-  font-size: var(--base-size);
+  font-size: var(--h4);
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 p {
@@ -51,7 +53,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  font-size: var(--h1);
+  font-size: calc(1.6*var(--h1));
 }
 
 h2 {
@@ -83,4 +85,32 @@ a:hover {
 img {
   width: 100%;
   max-width: 100%;
+}
+blockquote{
+  margin: 0;
+  padding: 0;
+}
+footer{
+  margin-top: 5rem;
+  text-transform: uppercase;
+}
+}
+@layer header-banner-tour{
+  .wrapper{
+    max-width:40%;
+    border: 3px solid bisque;
+    margin: 0 auto;
+  }
+  header img{
+    max-width: 300px;
+    padding: 2rem 0;
+  }
+  .date{
+    color: var(--tan);
+  }
+ .location{
+  color:var(--lime);
+  font-size: var(--h3);
+ }
+
 }
