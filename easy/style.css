@@ -145,7 +145,6 @@ aside{
   display: grid;
   grid-template-columns: 1fr minmax(20%,0.3fr);
   column-gap: 3rem;
-
 }
 main{
   grid-area: 2/2/4/3;
