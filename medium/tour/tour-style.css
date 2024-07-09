@@ -40,7 +40,7 @@
     font-family: var(--sans-serif);
     font-weight: 300;
     line-height: 1.75;
-  background: var(--gradient) ;
+  background: var(--gradient) no-repeat fixed;
     color: var(--white);
     font-size: var(--h4);
     margin: 0;
