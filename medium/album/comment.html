@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="album.css">
+
+  <script src="https://kit.fontawesome.com/a57de15a89.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Pacifico&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <aside>
+    <figure>
+    <blockquote>Just WOW</blockquote>
+
+    <div class="star-placeholder"></div>
+<figcaption>The Staple</figcaption>
+</figure>
+    <div class="imggroup">
+      <img src="imgForAside/fem-blue-arms.jpg" alt="">
+    </div>
+
+<figure>
+
+    <blockquote>Best. Album. Ever.</blockquote>
+
+    <div class="star-placeholder"></div>
+    <figcaption>Gold Spin</figcaption>
+</figure>
+    <div class="imggroup">
+      <img src="imgForAside/fem-fireworks.jpg" alt=""></div>
+
+  
+<figure>
+  <blockquote>I can't stop listening</blockquote>
+
+  <div class="star-placeholder"></div>figcaption>
+</figure>
+   <div class="imggroup"> 
+    <img src="imgForAside/fem-purple-arms.jpg" alt=""></div>
+   
+    <figure>
+      <blockquote>These guys know how to party</blockquote>
+   
+      <div class="star-placeholder"></div>
+      <figcaption>The Electric Vibe</figcaption>
+    </figure> 
+
+     
+  </aside>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+
+      const starHTML = `
+       <div class="start">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        
+      </div>
+      `
+      document.querySelectorAll('.star-placeholder').forEach(El=>El.innerHTML=starHTML)
+      });
+    
+  </script>
+</body>
+</html>

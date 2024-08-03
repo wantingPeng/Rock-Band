@@ -106,7 +106,7 @@
   header img{
     max-width: 300px;
   }
-    .wrapper{
+  .tourWrapper{
       max-width:800px;
       border: 3px solid bisque;
       margin: 0 auto;
@@ -122,17 +122,9 @@
     font-size: var(--h3);
    }
    .button{
-    border: 1px solid var(--magenta);
-    border-radius: 10px;
-    padding: 1rem 1rem;
-    font-family: var(--serif);
-    text-transform: uppercase;
-    color: var(--magenta);
-   display: inline-block;  
-    width: 200px;
-    /* white-space: nowrap; */
-     
+    width: 200px;   
    }
+
    .button:hover{
     border: 1px solid var(--cyan);
     color: var(--cyan);;
@@ -147,7 +139,7 @@
     opacity: 0.5; 
     pointer-events: none;
    }
-   main{
+   main.tour{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -162,7 +154,7 @@
     grid-column: 1/3;
     font-family: var(--cursive);
    }
-   p:nth-of-type(even){
+   .tour p:nth-of-type(even){
     justify-self: end;
    }
    p:nth-of-type(odd){
@@ -176,7 +168,7 @@
     justify-content: center;
     gap: 3rem;
   }
-  i{
+  footer i{
     font-size: 4rem;
     color: var(--lime);
   }

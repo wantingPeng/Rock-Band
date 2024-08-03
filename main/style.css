@@ -1,0 +1,84 @@
+ 
+ 
+@import url('/medium/album/album.css');
+@import url('/medium/player/player.css');
+@import url('/medium/hamburger/style.css');
+@import url('/medium/tour/tour-style.css'); 
+
+@media(width>=900px){
+.container{
+  display: grid;
+  grid-template-columns: auto 300px;
+  column-gap: 2rem;
+  margin: 2rem 3rem;
+ 
+}
+.container div{
+  justify-self: center;
+}
+.comment{
+  order:3;
+}
+.tour .button{
+width: 130px;
+white-space: wrap;
+ }
+ .tour p{
+  justify-self: center;
+ }
+.player{
+  display: grid;
+  grid-template-columns: 100px 500px;
+  text-align: center;
+  transition: grid-template-columns 500ms linear;
+}
+.player.visible{
+  grid-template-columns: 300px 500px;
+}
+
+.tracklist{
+  height: 500px;
+text-align: start;
+position: relative;
+overflow-y: auto;
+}
+
+.tracklist::-webkit-scrollbar {
+  width: 12px;
+}
+.tracklist::-webkit-scrollbar-button {
+  background-color:#d27d7d; /* 设置按钮背景颜色 */
+}
+.tracklist::-webkit-scrollbar-track {
+  background: #d27d7d;
+}
+.tracklist::-webkit-scrollbar-thumb {
+  background:#f47dda;
+}
+
+.tracklist button{
+position: absolute;
+top:50% ;
+left: 50%;
+transform: translate(-50%,-50%)  rotate(90deg);
+}
+
+.tracklist button.visible{
+  transform: rotate(0deg);
+  position: sticky; 
+  top:0% ;
+left: 0%;
+z-index: 3;
+background-color:#f47dda80;
+color: aliceblue;
+width: 100%;
+}
+.cover{
+  order:2
+}
+
+}
+table.visible{
+  display: block;
+  padding: 0 1rem;
+}
